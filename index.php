@@ -1,30 +1,51 @@
 <!doctype html>
 <html lang="en">
     <!-- include the head -->
-    <?php include 'php-includes/head.php' ?>
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="name" content="width=device-width, initial-scale=1.0">
+      <title>Nostalgia date</title>
+      <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    </head>
     <body>
       <header>
-        <nav>
+        <nav class="flex-nav">
           <ul>
-            <li>Pricing and Opening hours</li>
-            <li>The museum</li>
-            <li>About us</li>
-            <li class="log-in">Log in</li>
-            <li>About us</li>
+            <li class="logo">
+              <a href="#">
+                <img src="img/logo.jpg" alt="The first DDR Motorbike Museum in Berlin">
+              </a>
+            </li>
+            <li class="text-menu">
+              <div class="">
+                <div class="hamburger-menu" aria-label="Menu" role="menuitem" title="Menu" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <span class="sr-only">Menu</span>
+                </div>
+                <ul>
+                  <li class="text-menu-item"><a href="#">Visit</a></li>
+                  <li class="text-menu-item"><a href="#">The museum</a></li>
+                  <li class="text-menu-item"><a href="#">About us</a></li>
+                  <li class="text-menu-item log-in"><a href="#">Log in</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </nav>
-        <span id="trans" onclick='paulTrans()'>Hi Paul</span>
-        <div>Nelllliiiii</div>
-
-
-
       </header>
-      <script>
-      function paulTrans(){
-        var s = document.getElementById('trans');
-        s.className = 'newClass';
-      }
+      <main>
+      </main>
 
+      <script type="text/javascript">
+        function toggleMenu(x) {
+          x.parentNode.classList.toggle("open");
+        }
       </script>
     </body>
 </html>
