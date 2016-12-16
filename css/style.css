@@ -146,7 +146,7 @@ a{
 
 }
 
-/* Medium and up */
+/* 640 and up */
 @media screen and (min-width: 40em) {
   /* logo */
   .flex-nav .logo{
@@ -161,28 +161,8 @@ a{
     order: 2;
     flex-shrink: 1;
   }
+
+  .hamburger-menu{
+    display: none;
+  }
 }
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
-
-
-  #trans{
-    display: inline-block;
-    height: 100px;
-    transition: height 2s;
-    background-color: fuchsia;
-    cursor: pointer;
-
-  }
-
-  #trans.newClass{
-    height: 800px;
-  }
