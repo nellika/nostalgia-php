@@ -63,7 +63,7 @@
         </section>
         <section class="find-tours">
           <article class="tour">
-            <div class="">
+            <div class="recording">
               <audio preload>
                 <source src='audio/0831.ogg'/>
                 <source src='audio/0831.mp3'/>
@@ -72,7 +72,10 @@
                   <a href='audio/0831.mp3'>Download <em>mp3</em> File</a>
                 </div>
               </audio>
-              <button onclick="playAudio(this)">Play</button>
+              <button onclick="toggleAudio(this)">PL</button>
+            </div>
+            <div class="">
+
             </div>
           </article>
         </section>
@@ -84,9 +87,17 @@
           x.parentNode.classList.toggle("open");
         }
 
-        function playAudio(playButton){
-          playButton.previousElementSibling.play();
+        function toggleAudio(playButton){
+          var audioEl = playButton.previousElementSibling;
+          if(audioEl.paused){
+            audioEl.play();
+            playButton.innerHTML = 'FR';
+          }else{
+            audioEl.pause();
+            playButton.innerHTML = 'PL';
+          }
         }
+
 
       </script>
     </body>
