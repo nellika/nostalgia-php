@@ -4,8 +4,8 @@
 
     <head>
       <meta charset="utf-8">
-      <meta name="name" content="width=device-width, initial-scale=1.0">
-      <title>Nostalgia date</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nostalgia on two wheels...</title>
       <link rel="stylesheet" href="./css/normalize.css" />
       <link rel="stylesheet" href="./css/style.css" />
 
@@ -17,7 +17,7 @@
           <ul>
             <li class="logo">
               <a href="#">
-                <!-- <img src="img/logo.jpg" alt="The first DDR Motorbike Museum in Berlin"> -->
+                <img src="img/logo.jpg" alt="The first DDR Motorbike Museum in Berlin">
               </a>
             </li>
             <li class="text-menu">
@@ -40,9 +40,6 @@
         </nav>
       </header>
       <main>
-        <div class="testClass">
-          <p>I should bedsfdsfx</p>
-        </div>
       </main>
 
       <script type="text/javascript">
