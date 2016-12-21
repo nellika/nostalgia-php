@@ -1,7 +1,7 @@
 <header>
   <nav class="flex-nav">
       <div class="logo">
-        <a href="#">
+        <a href="index.php">
           <img
           sizes="(max-width: 1538px) 40vw, 615px"
           srcset="
