@@ -3,6 +3,7 @@
 @media only screen {
   html{
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
   }
 
   body{
@@ -19,9 +20,14 @@
     font-family: 'Lobster', cursive;
   }
 
+  h2, h3, p{
+    margin: 1% 0;
+  }
+
   section h2{
     text-align: center;
     color: #fff;
+    font-size: 150%;
   }
 
   a{
@@ -78,7 +84,7 @@
 
   /* =============== navigation =============== */
   .flex-nav{
-    background-color: yellow;
+    background-color: #fff9db;
     position: fixed;
     min-width: 96%;
     height: 3em;
@@ -87,6 +93,9 @@
     justify-content: space-between;
     z-index: 999;
     padding: 0 2%;
+    -webkit-box-shadow: 0px 10px 22px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 22px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 22px -15px rgba(0,0,0,0.75);
   }
 
   main{
@@ -110,19 +119,36 @@
   .flex-nav .menu ul li a{
     transition: all .5s ease;
     display: inline-block;
-    height: 3em;
-  }
-
-  .flex-nav .menu-item a{
-    background-color: green;
+    font-size: 1.3em;
+    line-height: 3;
+    font-family: 'Lobster', cursive;
   }
 
   .flex-nav .menu-item a:hover{
-    background-color: red;
+    color: #FFF9DB;
+    background-color: #510600;
   }
 
   .flex-nav .menu ul li{
     display: inline-block;
+  }
+
+  .flex-nav .menu-item.contact a:hover{
+    background-color: transparent;
+  }
+
+  .flex-nav .menu-item .social-connect a{
+    line-height: 1;
+  }
+
+  .flex-nav .menu-item p:nth-child(1){
+    font-family: 'Lobster', cursive;
+    font-size: 1.3em;
+  }
+
+  .flex-nav .menu-item .social-connect img{
+    width: 50px;
+    height: 50px;
   }
 
   /* =============== main page =============== */
@@ -130,6 +156,7 @@
   .jumbo-container{
     text-align: center;
     position: relative;
+    font-family: 'Lobster', cursive;
   }
 
   .jumbo-container img{
@@ -147,13 +174,28 @@
   }
 
   .holo:nth-of-type(2){
-    bottom: 0;
+    bottom: 3px;
   }
 
   .slogan{
-    font-family: 'Lobster', cursive;
     color: #fff;
     font-size: 1.4em;
+  }
+
+  .customize-tour{
+    width: 100%;
+    position: absolute;
+    top: 39%;
+  }
+
+  .customize-tour a{
+    background-color: #510600;
+    color: #FFF9DB;
+    font-size: 2em;
+    padding: 2% 4%;
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
   }
 
 /* =============== tour =============== */
@@ -334,8 +376,7 @@
     overflow-y: auto;
     position: fixed;
     text-align: right;
-    padding-right: 2%;
-    background-color: #eee;
+    background-color: #FFFDF4;
     -webkit-transform: translate(100%, 0);
     transform: translate(100%, 0);
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.05, 1);
@@ -351,6 +392,14 @@
 
   .menu ul li{
     width: 100%;
+    text-align: center;
+  }
+
+  .menu ul li>a{
+    width: 100%;
+    -webkit-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
   }
 
 }
@@ -361,12 +410,21 @@
     display: none;
   }
 
+  .flex-nav .menu-item>a{
+    padding: 0 2em;
+  }
+
   .flex-nav .menu-item.contact {
     position: fixed;
     right: 0;
+    top:110px;
   }
 
   .flex-nav .menu-item.contact p{
     display: none;
+  }
+
+  .flex-nav .menu-item.contact a{
+    display: block;
   }
 }

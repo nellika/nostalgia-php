@@ -1,54 +1,8 @@
 <!doctype html>
 <html lang="en">
-    <!-- include the head -->
-
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Nostalgia on two wheels...</title>
-      <link rel="stylesheet" href="./css/normalize.css" />
-      <link rel="stylesheet" href="./css/style.css" />
-
-      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    </head>
+    <?php include 'php-includes/head.php'; ?>
     <body>
-      <header>
-        <nav class="flex-nav">
-            <div class="logo">
-              <a href="#">
-                <img
-                sizes="(max-width: 1538px) 40vw, 615px"
-                srcset="
-                img/logo/logo-rethink2-small.png 308w,
-                img/logo/logo-rethink2.png 615w"
-                src="img/logo/logo-rethink2-small.png,img/logo/logo-rethink2.png"
-                alt="The first DDR Motorbike Museum in Berlin">
-              </a>
-            </div>
-            <div class="menu">
-              <div class="hamburger-menu" aria-label="Menu" role="menuitem" title="Menu" onclick="toggleMenu(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                  <span class="sr-only">Menu</span>
-              </div>
-              <ul>
-                <li class="menu-item"><a href="#">Visit</a></li>
-                <li class="menu-item"><a href="#">The museum</a></li>
-                <li class="menu-item"><a href="#">About us</a></li>
-                <li class="menu-item contact">
-                  <p>Contact us</p>
-                  <p>ddr-nostalgia@motorrad.de</p>
-                  <p>+66 50 343 343</p>
-                  <div class="social-connect">
-                    <a href="https://twitter.com/GDR_BikesBerlin"><img src="./img/social/twitter.svg" alt="Check out our Twitter" /></a>
-                    <a href="https://www.facebook.com/ErstesBerlinerDDRMotorradmuseum"><img src="./img/social/fb.svg" alt="Visit our Facebook page" /></a>
-                  </div>
-                </li>
-              </div>
-            </ul>
-        </nav>
-      </header>
+      <?php include 'php-includes/navigation.php'; ?>
       <main>
         <section class="jumbo-container">
           <img sizes="(max-width: 3500px) 40vw, 1400px"
@@ -68,6 +22,9 @@
               <span>&hellip;history on</span>
               <span>two wheels</span>
             </p>
+          </div>
+          <div class="customize-tour">
+            <a href="customize-tour.php">customize my <span>tour</span></a>
           </div>
         </section>
         <section class="find-tours">
@@ -99,27 +56,5 @@
           </article>
         </section>
       </main>
-
-      <script type="text/javascript">
-        function toggleMenu(x) {
-          x.parentNode.classList.toggle("open");
-        }
-
-        function toggleAudio(playButton){
-          var audioEl = playButton.previousElementSibling;
-          audioEl.parentNode.parentNode.classList.toggle("show-guide");
-
-          if(audioEl.paused){
-            audioEl.play();
-            // playButton.innerHTML = 'FR';
-            playButton.classList.toggle("playing");
-          }else{
-            audioEl.pause();
-            playButton.classList.toggle("paused");
-          }
-        }
-
-
-      </script>
     </body>
 </html>
