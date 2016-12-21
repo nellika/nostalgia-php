@@ -4,7 +4,7 @@
     <body>
       <?php include 'php-includes/navigation.php'; ?>
       <main>
-        Customize
+        Tours
       </main>
     </body>
 </html>

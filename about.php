@@ -4,7 +4,7 @@
     <body>
       <?php include 'php-includes/navigation.php'; ?>
       <main>
-        Customize
+        About
       </main>
     </body>
 </html>

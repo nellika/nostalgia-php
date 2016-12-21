@@ -24,7 +24,7 @@
             </p>
           </div>
           <div class="customize-tour">
-            <a href="customize-tour.php">customize my <span>tour</span></a>
+            <a href="customize.php">customize my <span>tour</span></a>
           </div>
         </section>
         <section class="find-tours">

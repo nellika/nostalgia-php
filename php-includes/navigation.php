@@ -19,9 +19,9 @@
             <span class="sr-only">Menu</span>
         </div>
         <ul>
-          <li class="menu-item"><a href="#">Visit</a></li>
-          <li class="menu-item"><a href="#">The museum</a></li>
-          <li class="menu-item"><a href="#">About us</a></li>
+          <li class="menu-item"><a href="visit.php">Visit</a></li>
+          <li class="menu-item"><a href="http://www.erstesberliner-ddr-motorradmuseum.de/">The museum</a></li>
+          <li class="menu-item"><a href="about.php">About us</a></li>
           <li class="menu-item contact">
             <p>Contact us</p>
             <p>ddr-nostalgia@motorrad.de</p>
