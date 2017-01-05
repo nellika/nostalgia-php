@@ -4,6 +4,7 @@
     <body>
       <?php include 'php-includes/navigation.php'; ?>
       <main>
+        buy ticket
       </main>
     </body>
 </html>

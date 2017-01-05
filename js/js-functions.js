@@ -5,13 +5,13 @@ window["toggleMenu"] = function toggleMenu(x) {
 window["toggleAudio"] = function toggleAudio(playButton){
   var audioEl = playButton.previousElementSibling;
   audioEl.parentNode.parentNode.classList.toggle("show-guide");
+  
+  playButton.classList.toggle("playing");
+  playButton.classList.toggle("paused");
 
   if(audioEl.paused){
     audioEl.play();
-    // playButton.innerHTML = 'FR';
-    playButton.classList.toggle("playing");
   }else{
     audioEl.pause();
-    playButton.classList.toggle("paused");
   }
 }
