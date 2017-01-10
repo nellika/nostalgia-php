@@ -17,7 +17,7 @@
             <span class="ribbon-right"></span>
             <div class="tour-details">
               <div class="recording">
-                <audio preload>
+                <audio preload onended="toggleAudio(this)">
                   <source src="audio/'.$value["voice"].'"/>
                   <source src="audio/0831.mp3"/>
                   <div>
