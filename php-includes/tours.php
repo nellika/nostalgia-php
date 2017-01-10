@@ -17,7 +17,7 @@
             <span class="ribbon-right"></span>
             <div class="tour-details">
               <div class="recording">
-                <audio preload onended="toggleAudio(this.nextSibling)">
+                <audio preload onended="toggleAudio(this, false)">
                   <source src="audio/'.$value["voice"].'"/>
                   <source src="audio/0831.mp3"/>
                   <div>
@@ -25,7 +25,7 @@
                     <a href="audio/0831.mp3">Download <em>mp3</em> File</a>
                   </div>
                 </audio>
-                <div class="play-button paused" role="button" onclick="toggleAudio(this)"></div>
+                <div class="play-button paused" role="button" onclick="toggleAudio(this.previousElementSibling, true)"></div>
               </div>
               <div class="tour-time">'.$value["time"].'</div>
               <div class="guide-name">'.$value["guide"].'</div>

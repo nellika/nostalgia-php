@@ -2,13 +2,12 @@ window["toggleMenu"] = function toggleMenu(x) {
   x.parentNode.classList.toggle("open");
 }
 
-window["toggleAudio"] = function toggleAudio(playButton){
-  var audioEl = playButton.previousElementSibling;
+window["toggleAudio"] = function toggleAudio(audioEl, audioToggle){
   audioEl.parentNode.parentNode.classList.toggle("show-guide");
-  
-  playButton.classList.toggle("playing");
-  playButton.classList.toggle("paused");
+  if(audioToggle) { audioAutoControl(audioEl) };
+}
 
+function audioAutoControl(audioEl){
   if(audioEl.paused){
     audioEl.play();
   }else{

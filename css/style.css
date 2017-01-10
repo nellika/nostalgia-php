@@ -282,7 +282,7 @@
     background-repeat: no-repeat;
   }
 
-  .recording .play-button.playing{
+  .show-guide .recording .play-button{
     background-image: url('../img/stop.png');
   }
 
