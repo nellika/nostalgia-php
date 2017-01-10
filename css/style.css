@@ -502,3 +502,8 @@
     width: 30%;
   }
 }
+
+.not-finished h2{
+  text-align: center;
+  color: #510600;
+}
