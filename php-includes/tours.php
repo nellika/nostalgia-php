@@ -1,13 +1,13 @@
 <?php
   $tours = array(
-            array("date"=>"11.12.", "time"=>"14:00", "guide"=>"Ralf"),
-            array("date"=>"11.13.", "time"=>"14:00", "guide"=>"Wolfgang"),
-            array("date"=>"11.13.", "time"=>"16:00", "guide"=>"Erik"),
-            array("date"=>"11.14.", "time"=>"14:00", "guide"=>"Ralf"),
-            array("date"=>"11.14.", "time"=>"16:00", "guide"=>"Franz"),
-            array("date"=>"11.15.", "time"=>"14:00", "guide"=>"Ralf"),
-            array("date"=>"11.16.", "time"=>"14:00", "guide"=>"Ralf"),
-            array("date"=>"11.17.", "time"=>"16:00", "guide"=>"Ralf")
+            array("date"=>"11.12.", "time"=>"14:00", "guide"=>"Ralf", "voice"=>"Ralf.wav" ),
+            array("date"=>"11.13.", "time"=>"14:00", "guide"=>"Wolfgang", "voice"=>"Wolfgang.wav"),
+            array("date"=>"11.13.", "time"=>"16:00", "guide"=>"Erik", "voice"=>"Wolfgang.wav"),
+            array("date"=>"11.14.", "time"=>"14:00", "guide"=>"Ralf", "voice"=>"Ralf.wav"),
+            array("date"=>"11.14.", "time"=>"16:00", "guide"=>"Franz", "voice"=>"Wolfgang.wav"),
+            array("date"=>"11.15.", "time"=>"14:00", "guide"=>"Ralf", "voice"=>"Ralf.wav"),
+            array("date"=>"11.16.", "time"=>"14:00", "guide"=>"Ralf", "voice"=>"Ralf.wav"),
+            array("date"=>"11.17.", "time"=>"16:00", "guide"=>"Ralf", "voice"=>"Ralf.wav")
   );
 
   foreach ($tours as $key => $value) {
@@ -18,10 +18,10 @@
             <div class="tour-details">
               <div class="recording">
                 <audio preload>
-                  <source src="audio/0831.ogg"/>
+                  <source src="audio/'.$value["voice"].'"/>
                   <source src="audio/0831.mp3"/>
                   <div>
-                    <a href="audio/0831.og">Download <em>ogg</em> File</a>,
+                    <a href="audio/'.$value["voice"].'">Download <em>wav</em> File</a>,
                     <a href="audio/0831.mp3">Download <em>mp3</em> File</a>
                   </div>
                 </audio>
